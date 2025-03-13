@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albarán Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Albarán</h1>
+        <form id="albaranForm">
+            <div id="lines">
+                <div class="line">
+                    <input type="date" name="fecha" placeholder="Fecha" />
+                    <input name="cliente" placeholder="Cliente" />
+                    <input name="itemNumber" placeholder="Item Number" />
+                    <input name="cantidad" placeholder="Cantidad" />
+                    <button type="button" class="removeLine">Borrar línea</button>
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="button" id="addLine">Añadir línea</button>
+                <button type="button" id="resetForm">Inicio</button>
+                <button type="button" id="exportExcel">Exportar a Excel</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
